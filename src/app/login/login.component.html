@@ -1,1 +1,24 @@
-<app-navigation-bar></app-navigation-bar>
+<!--Seção de login-->
+<section>
+    <mat-card>
+        <mat-card-title>Login</mat-card-title>
+        <mat-card-content>
+            <form [formGroup]="loginForm">
+              <div>
+                <mat-form-field>
+                    <input matInput placeholder="Username" 
+                        type="text" formControlName="username">
+                </mat-form-field>
+                <mat-form-field>
+                    <input matInput placeholder="Password" 
+                    type="password" formControlName="password">
+                </mat-form-field>
+              </div>  
+            </form>
+        </mat-card-content>
+        <mat-card-actions class="button-register buttons-container">
+            <button mat-raised-button color="primary" (click)="login()">
+                Login </button>
+        </mat-card-actions>
+    </mat-card>
+</section>

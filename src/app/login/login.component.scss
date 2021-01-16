@@ -1,0 +1,23 @@
+:host{
+    display:flex;
+    justify-content: center;
+    margin: 180px 0px;
+}
+
+.mat-from-field{
+    width: 100%;
+    min-width: 300px;
+}
+
+mat-card-title,
+mar-card-content{
+    display: flex;
+    justify-content: center;
+
+}
+
+
+.buttons-container{
+    display: flex;
+    justify-content: center;
+}

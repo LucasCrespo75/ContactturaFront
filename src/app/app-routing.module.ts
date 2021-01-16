@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import{ Routes, RouterModule} from '@angular/router';
 import{ LoginComponent } from './login/login.component';
 import{CreateEditContactsComponent} from './contacts/create-edit/create-edit.component';
-import{ListContactsComponent } from './contact/list/list.component';
+import{ListContactsComponent } from './contacts/list/list.component';
 import{CreateEditUsersComponent} from './users/create-edit/create-edit.component';
 import{ListUsersComponent} from './users/list/list.component';
 
