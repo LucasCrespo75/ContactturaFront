@@ -2,3 +2,15 @@
 
 //html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.botton_check_color .mat-rised-button.mat-warn{
+    background-color: #28a745;
+}
+
+.button_check_color .mat-rised-button.mat-acent{
+    background-color: #f44336;
+}
+
+.button_primary_color .mat-rised-button.mat-primary{
+    background-color: #007bff;
+}

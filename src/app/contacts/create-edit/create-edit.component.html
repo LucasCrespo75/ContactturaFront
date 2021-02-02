@@ -1,1 +1,43 @@
 <app-navigation-bar></app-navigation-bar>
+<!--Header do formulario de criação/edição de usuarios-->
+<section>
+    <div class="tittle-new-contacts">
+        <h1>
+            Cadastro Novo Contato
+        </h1>
+    </div>
+</section>
+<!--Formulario para edição e criação de novo contato-->
+<section>
+    <mat-card>
+    <form [formGroup]="createEditForm">
+        <div class="grod-container">
+            <div class="gird-item">
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nome</mat-label>
+                <input matInput formControlName="name">    
+                </mat-form-field>
+            </div>
+        <div class="grid-item">
+            <mat-form-field class="example-full-width">
+                <mat-label>Phone</mat-label>
+            <input matInput formControlName="phone">    
+            </mat-form-field>
+        </div>    
+        <div class="grid-item">
+            <mat-form-field class="exampe-full-width">
+                <mat-label>Email</mat-label>
+            <input matInput formControlName="email">    
+            </mat-form-field>
+        </div>    
+    </div>
+    <div class="grid-container-button button_primary_color">
+        <!--<button mat-rised-button color="primary" (click)="createContacts()">Novo Contato</button>-->
+        <mat-card-actions class="button_primary_color buttons-container">
+        <button *ngIf="!edit" mat-rised-button color="primary" (click)="createContacts()">Salvar Contato</button>
+        <button *ngIf="edit" mat-rised-button color="primary" (click)="editContacts()">Editar Contato</button>
+        </mat-card-actions>
+    </div>
+    </form>
+</mat-card>
+</section>

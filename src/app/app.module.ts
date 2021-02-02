@@ -12,11 +12,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { Erro404Component } from './sharedComponents/erro404/erro404.component';
 import { NavigationBarComponent } from './sharedComponents/navigation-bar/navigation-bar.component';
 // Importações do material design
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxModule} from '@angular/material/checkbox';
+//importação da paginação 
+import {NgxPaginationModule} from 'ngx-pagination';
+//Importação do odulo de requisição http
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,21 +33,29 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ListUsersComponent,
     LoginComponent,
     Erro404Component,
-    NavigationBarComponent,
+    NavigationBarComponent
   
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    MatToolbarModule,
     MatIconModule,
     MatCardModule,
     MatInputModule,
     MatButtonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgxPaginationModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+ // constructor(overlayContainer : OverlayContainer) {
+   // overlayContainer.getContainerElement().classList.add('unicorn-dark-theme');
+ // }
+}

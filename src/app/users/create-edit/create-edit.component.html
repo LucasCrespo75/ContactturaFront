@@ -1,1 +1,40 @@
-<p>create-edit works!</p>
+<app-navigation-bar></app-navigation-bar>
+<!-- Header do formulário de criaçõa/edição de usuários -->
+<section>
+    <div class="title-new-contacts">
+        <h1>
+            Cadastrar Novo Usuário
+        </h1>
+    </div>
+</section>
+<!-- Formulário para edição e criação de novo contato -->
+<section>
+    <form>
+        <div class="grid-container" [formGroup]="createEditUserForm">
+            <div class="grid-item" >
+                <mat-form-field class="example-full-width">
+                    <mat-label>Email</mat-label>
+                    <input matInput formControlName="email">
+                  </mat-form-field>
+            </div>
+            <div class="grid-item" >
+                <mat-form-field class="example-full-width">
+                    <mat-label>Senha</mat-label>
+                    <input matInput formControlName="password" type="password">
+                  </mat-form-field>
+            </div>
+            <div class="grid-item" >
+                <mat-form-field class="example-full-width">
+                    <mat-label>Nome</mat-label>
+                    <input matInput formControlName="nome">
+                  </mat-form-field>
+            </div>
+            <div class="grid-item">
+                <mat-checkbox [(ngModel)]="checked" id="input1" name="input1" class="checkbox_position" formControlName="admin">Administrador?</mat-checkbox>
+            </div>
+        </div>
+        <div class="grid-container-button button_primary_color">
+            <button mat-raised-button color="primary" (click)="createUser()">Salvar Usuário</button>
+        </div>
+      </form>
+</section>

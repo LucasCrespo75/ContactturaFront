@@ -1,36 +1,30 @@
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-          <link rel="stylesheet" type="txt/scss" heref="estilo.scss"/> 
-    </head> 
 <body>
-    <h1>NoobsFuctura</h1>
-    <div></div>
-
-    <div id="color">
-    </div>
+    <!--<img src="assets/img/login.jpg" alt="" class="logo">   -->   
     <!--Navegação-->
     <nav class="navbar">
-        <!--Menu responsivo para Mobile-->
-        <span class="navbar-toggle" id="toggle-action">
+        <!--Menu responsivo para Mobile !-->
+        <span class="nav-toggle" id="toggle-action">
             <mat-icon>menu</mat-icon>
         </span>
+        
 
 <!--Menu responsivo para web (Mninimo de 769px)-->
 <a class="logo"Logo></a>
 
 <!--Lista de rotas do menu-->
-<ul class="main-nav" id="desktop-menu">
+    <ul class="main-nav" id="desktop-menu">
         <li>
             <a routerLink="/contacts-list" class="nav-links">Contatos</a>
         </li>
-        <li>
-            <a routerLink="/contact-list" class="nav-links">Usuários</a>
+        <li *ngIf="admin != 'false'">
+            <a routerLink="/users-list" class="nav-links">Usuários</a>
         </li>
-        <li>
+       <!-- <li>
             <a routerLink="/login" class="nav-links">Logout</a>
-                </li>
-             </ul>
-         </nav>  
+        </li>-->
+        <li>
+        <a (click)="logout()" class="nav-links">Logout</a>
+    </li>
+    </ul>
+</nav> 
 </body>
-</html>

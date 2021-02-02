@@ -1,116 +1,100 @@
-*{
-    body {
-        background-color: #000000;
-      }
-    h1 {
-        width: 370px;
-        height: 45px;
-        text-align: center;
-        margin: auto;
-        background:linear-gradient(90deg,  #01019b , black);
-        font-size: 43px;
-        color:#fff;
-        border-radius: 10px;
-        animation: logo;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-    }
-    
-    @keyframes logo {
-        0%{background:linear-gradient(-90deg,  #01019b , black)};
-        50%{background:linear-gradient(90deg,  #01019b , black)};
-        100%{background:linear-gradient(-90deg,  #01019b , black)};
-    }
+ *{
+     box-sizing: border-box; 
+     float
+     
+ 
 
-body{
-   background:linear-gradient(90deg,  #01019b , black);
-   background-repeat:repeat; 
-
-
-}    
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
+ body{
+    font-family: Arial, Zapf-Chancery, sans-serif;
 }
 
-.navbar{
-    font-size: 18px;
-    background-color: #F8F9FA;
-    padding-bottom: 10px;
-
-}
-
-.navbar-toggle{
-    position: relative;
-    top: 10px;
-    float: left;
-    font-size: 20px;
-    cursor: pointer;
-    color: black;
-}
-
-.logo{
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 20px 10px 0px 0px;
-}
-
-.main-nav{
-    list-style-type: none;
-    display: none;
-}
-
-.main-nav li{
-    text-align: center;
-    margin: 15px auto;
-}
-.nav-links,
-.logo{
-    text-decoration: none;
-}
-
-.nav-links{
-    margin-left: 40px;
-}
-
-.active{
-    display: block;
-}
-
-
-@media screen and (min-width: 769) {
 
     .navbar{
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 0;
-        height: 70px;
-        align-items: center;
+        font-size: 18px;
+        background-color: linen;
+        padding-bottom: 10px;
+    
     }
-
-    .main-nav{
-        display: flex;
-        margin-left: 30px;
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-
-    .main-nav li{
-        margin: 0;
-    }
-
-
+    
     .navbar-toggle{
-        display:  none;
-
-    }
-
-    .logo:hover,
-    .nav-links:hover{
-        color: #459645;
-    
+        position: relative;
+        cursor: pointer;
     }
     
+    
+    
+    .main-nav{
+        list-style-type: none;
+        display: flex;
+
+        
+    }
+    
+    .main-nav li{
+        //text-align: left;
+        margin: 15px auto;
+        text-transform: uppercase;
+    }
+    
+    //.nav-links,
+   // .logo{
+      
+   // }
+    .nav-links{
+        margin-right: 72px;
+        cursor: pointer;
+        font-size: 32px;
+        color: rgb(0, 0, 0);
+    }
+    
+    .active{
+        display: flex;
+    }
+    
+    
+    @media screen and (min-width: 769) {
+    
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0;
+            height: 70px;
+            align-items: center;
+        }
+    
+        .main-nav{
+            margin-left: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            
+        }
+    
+        .main-nav li{
+            margin: 0;
+        }
+    
+    
+        .navbar-toggle{
+            display:  none;
+    
+        }
+    
+        .logo:hover,
+        .nav-links:hover{
+            color: #0f0095;
+        
+        }
+        
+    }
+    
+    
 }
-}
+    
+    
+    
+    
+    
+    
+    
+    

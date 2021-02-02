@@ -1,0 +1,57 @@
+.title-new-contacts{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    h1{
+        font-size: 35px;
+        font-weight: bold;
+        font-family: arial;
+    }
+  }
+  
+  .example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .grid-container-button {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-left: 30px;
+    gap: 10px;
+    
+    button{
+      width: 130px;
+    }
+  }
+  
+  .checkbox_position{
+    float: left;
+    padding-top: 20px;
+  }
+  
+  @media screen and (max-width: 600px){
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto;
+      padding: 10px;
+      gap: 10px;
+    }
+  }
